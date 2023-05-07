@@ -35,10 +35,13 @@
                 <div class="clearfix">
                     <a class="btn btn-primary float-right" href="{{url_for('edit_post', post_id=post.id)}}">Edit
                         Event</a>
-                    <a class="btn btn-primary " href="#">Download
+
+                </div >
+                {% endif %}
+                <div class="clearfix">
+                    <a class="btn btn-primary float-right" href="#">Download
                         Report</a>
                 </div>
-                {% endif %}
 
                 {{ ckeditor.load() }}
                 {{ ckeditor.config(name='comment_text') }}
